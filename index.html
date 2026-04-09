@@ -1,808 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Paperhood — Print books on demand. No minimum order. Fast printing. Affordable pricing. Upload your manuscript and get premium printed books delivered to your door." />
-  <meta name="keywords" content="print on demand, book printing, self publishing, custom books, affordable book printing" />
-  <meta name="author" content="Paperhood" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Paperhood — Print Books On Demand" />
-  <meta property="og:description" content="No minimum order. Fast printing. Premium quality. Upload, print, deliver." />
-  <meta property="og:type" content="website" />
-
-  <title>Paperhood — Print Books On Demand</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232C4A3E'/><text y='23' x='5' font-size='20'>📖</text></svg>" />
-
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Paperhood - Professional print on demand book service. No minimum orders, fast printing, premium quality. Print only what you need.">
+    <meta name="keywords" content="print on demand, book printing, no minimum, self publishing, paperhood">
+    <meta name="author" content="Paperhood">
+    <meta property="og:title" content="Paperhood | Print Books On Demand">
+    <meta property="og:description" content="Professional print on demand service for authors and publishers.">
+    <meta property="og:type" content="website">
+    <title>Paperhood | Professional Print on Demand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ==========================================
-       NAVBAR
-  =========================================== -->
-  <nav id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="#home" class="nav-logo" aria-label="Paperhood homepage">
-          <div class="nav-logo-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-          </div>
-          Paperhood
-        </a>
-
-        <ul class="nav-links" role="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="nav-cta">
-          <a href="#cta-section" class="btn btn-primary">Get Started</a>
+    <!-- Header Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Paperhood</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
+    </nav>
 
-        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <ul class="nav-links" role="list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#cta-section" class="btn btn-primary">Get Started</a>
-  </div>
-
-
-  <!-- ==========================================
-       HERO SECTION
-  =========================================== -->
-  <section id="home" aria-label="Hero">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-bg-circle hero-bg-circle-1"></div>
-      <div class="hero-bg-circle hero-bg-circle-2"></div>
-      <div class="hero-grid-lines"></div>
-    </div>
-
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <div class="hero-badge" aria-label="New feature">
-            <span class="hero-badge-dot" aria-hidden="true"></span>
-            Now with express 24-hour delivery
-          </div>
-
-          <h1 class="hero-title">
-            Print Books<br /><em>On Demand,</em><br />Your Way
-          </h1>
-
-          <p class="hero-desc">
-            Paperhood makes professional book printing accessible to everyone.
-            Upload your manuscript, choose your specs, and receive high-quality
-            printed books — no bulk orders, no waste, no minimum.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#cta-section" class="btn btn-primary">
-              <span>📖</span> Print Your Book
-            </a>
-            <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
-          </div>
-
-          <div class="hero-stats">
-            <div>
-              <span class="hero-stat-num" data-count="12000" data-suffix="+">12,000+</span>
-              <span class="hero-stat-label">Books Printed</span>
-            </div>
-            <div>
-              <span class="hero-stat-num" data-count="3400" data-suffix="+">3,400+</span>
-              <span class="hero-stat-label">Happy Authors</span>
-            </div>
-            <div>
-              <span class="hero-stat-num" data-count="98" data-suffix="%">98%</span>
-              <span class="hero-stat-label">Satisfaction Rate</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero Visual / 3D Animated Book -->
-        <div class="hero-visual" aria-hidden="true">
-
-          <!-- 3D Book Scene -->
-          <div class="book-3d-scene">
-            <div class="book-3d" id="animated-book">
-
-              <!-- Spine (left edge) -->
-              <div class="bk-spine"></div>
-
-              <!-- Open pages spread (always underneath) -->
-              <div class="bk-pages-spread">
-                <!-- Left page: decorative lines -->
-                <div class="bk-page-left">
-                  <div class="bk-page-icon">📖</div>
-                  <div class="bk-line"></div>
-                  <div class="bk-line" style="width:75%"></div>
-                  <div class="bk-line"></div>
-                  <div class="bk-line" style="width:60%"></div>
-                  <div class="bk-line"></div>
-                  <div class="bk-line" style="width:80%"></div>
-                  <div class="bk-line" style="width:50%"></div>
-                  <div class="bk-line"></div>
-                  <div class="bk-line" style="width:70%"></div>
+    <main>
+        <!-- Hero Section with Live Book Animation -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-star"></i> Trusted by 10,000+ Authors
+                        </div>
+                        <h1>Print Books <span class="gradient-text">On Demand</span></h1>
+                        <p class="hero-subtitle">Transform your manuscript into a masterpiece. Zero inventory. Zero waste. Print exactly what you need, when you need it.</p>
+                        <div class="hero-buttons">
+                            <button class="btn-primary" id="heroCtaBtn">
+                                <i class="fas fa-print"></i> Print Your Book
+                            </button>
+                            <button class="btn-outline" id="learnMoreBtn">
+                                <i class="fas fa-play"></i> How It Works
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Books Printed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">99%</span>
+                                <span class="stat-label">Satisfaction</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">120+</span>
+                                <span class="stat-label">Countries</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="live-book-container">
+                            <div class="open-book">
+                                <div class="book-left-page">
+                                    <div class="page-content">
+                                        <div class="page-title">Your Story</div>
+                                        <div class="typed-text-container">
+                                            <span class="typed-text" id="typedText"></span>
+                                            <span class="cursor">|</span>
+                                        </div>
+                                        <div class="page-decoration"></div>
+                                    </div>
+                                </div>
+                                <div class="book-right-page">
+                                    <div class="page-content">
+                                        <div class="page-icon">
+                                            <i class="fas fa-feather-alt"></i>
+                                        </div>
+                                        <div class="page-message">Print on Demand<br>Made Easy</div>
+                                        <div class="page-small-text">No minimum order<br>Premium quality<br>Fast delivery</div>
+                                    </div>
+                                </div>
+                                <div class="book-center-fold"></div>
+                            </div>
+                            <div class="book-shadow"></div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Right page: typing text appears here -->
-                <div class="bk-page-right">
-                  <p class="bk-typed-text" id="bk-typed-text"></p>
-                  <span class="bk-cursor" id="bk-cursor">|</span>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 32L48 42.7C96 53.3 192 74.7 288 80C384 85.3 480 74.7 576 64C672 53.3 768 42.7 864 48C960 53.3 1056 74.7 1152 80C1248 85.3 1344 74.7 1392 69.3L1440 64V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V32Z" fill="#FAF8F5"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2 class="section-title">Premium Features for <span class="gradient-text">Modern Authors</span></h2>
+                    <p class="section-subtitle">Everything you need to bring your book to life with professional quality</p>
                 </div>
-              </div>
-
-              <!-- Front cover — animates open on load -->
-              <div class="bk-cover-front" id="bk-cover-front">
-                <div class="bk-cover-content">
-                  <div class="bk-cover-icon">📚</div>
-                  <div class="bk-cover-title">Paperhood</div>
-                  <div class="bk-cover-sub">Your Story Starts Here</div>
-                  <div class="bk-cover-lines">
-                    <div class="bk-cl"></div>
-                    <div class="bk-cl" style="width:70%"></div>
-                    <div class="bk-cl" style="width:50%"></div>
-                  </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>No Minimum Order</h3>
+                        <p>Print one copy or thousands — we treat every order with the same care and attention to detail.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Fast Printing</h3>
+                        <p>5-7 day turnaround with express options available. Get your books when you need them.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Affordable Pricing</h3>
+                        <p>Competitive rates without compromising on quality. Volume discounts available.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Premium Quality Paper</h3>
+                        <p>Acid-free, archival-grade paper that lasts for generations. Multiple paper types available.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Sustainable materials, FSC-certified paper, and carbon-neutral shipping options.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Dedicated customer support team ready to help with any questions or concerns.</p>
+                        <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
-              </div>
-
             </div>
-          </div>
+        </section>
 
-          <!-- Float cards kept as-is -->
-          <div class="hero-float-card float-card-1">
-            <div class="hero-float-card-icon" style="background:rgba(44,74,62,0.1);">✅</div>
-            <div>
-              <div style="font-weight:700;font-size:0.82rem;">Order Confirmed</div>
-              <div style="font-size:0.75rem;color:var(--warm-gray);">Ready in 48 hrs</div>
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Simple Process</span>
+                    <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+                    <p class="section-subtitle">From manuscript to masterpiece in four simple steps</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <h3>Upload Your Book</h3>
+                        <p>Submit your manuscript in PDF, Word, or InDesign format. Our system accepts all major file types.</p>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h3>Choose Specifications</h3>
+                        <p>Select paper type, binding, cover finish, trim size, and other custom options.</p>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3>Print & Quality Check</h3>
+                        <p>We professionally print and inspect every book for quality assurance.</p>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon-wrapper">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Delivered to Your Door</h3>
+                        <p>Fast shipping worldwide with tracking. Your books arrive ready to share.</p>
+                    </div>
+                </div>
+                <div class="steps-cta">
+                    <button class="btn-primary-outline" id="stepsCtaBtn">
+                        <i class="fas fa-file-upload"></i> Start Your First Print
+                    </button>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="hero-float-card float-card-2">
-            <div class="hero-float-card-icon" style="background:rgba(200,136,42,0.1);">⭐</div>
-            <div>
-              <div style="font-weight:700;font-size:0.82rem;">4.9 / 5 Rating</div>
-              <div style="font-size:0.75rem;color:var(--warm-gray);">3,400+ reviews</div>
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Pricing Plans</span>
+                    <h2 class="section-title">Simple, <span class="gradient-text">Transparent</span> Pricing</h2>
+                    <p class="section-subtitle">No hidden fees. Pay only for what you print.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Softcover</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>400
+                                <span class="period">/book</span>
+                            </div>
+                            <p>Perfect for novels, memoirs, and poetry</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Premium 80gsm paper</li>
+                            <li><i class="fas fa-check"></i> Matte or gloss cover</li>
+                            <li><i class="fas fa-check"></i> Black & white interior</li>
+                            <li><i class="fas fa-check"></i> Free shipping over $50</li>
+                            <li><i class="fas fa-check"></i> Perfect binding</li>
+                        </ul>
+                        <button class="pricing-btn">Choose Softcover</button>
+                    </div>
+                    <div class="pricing-card recommended">
+                        <div class="recommended-badge">
+                            <i class="fas fa-crown"></i> Most Popular
+                        </div>
+                        <div class="pricing-header">
+                            <h3>Hardcover</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>999
+                                <span class="period">/book</span>
+                            </div>
+                            <p>Ideal for coffee table books and special editions</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Premium acid-free paper</li>
+                            <li><i class="fas fa-check"></i> Dust jacket or printed cover</li>
+                            <li><i class="fas fa-check"></i> Full color option available</li>
+                            <li><i class="fas fa-check"></i> Free shipping + tracking</li>
+                            <li><i class="fas fa-check"></i> Smyth-sewn binding</li>
+                            <li><i class="fas fa-check"></i> Ribbon bookmark</li>
+                        </ul>
+                        <button class="pricing-btn primary">Choose Hardcover</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Bulk Saver</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>1200
+                                <span class="period">/book</span>
+                            </div>
+                            <p>Best for large print runs and resellers</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> 50+ books minimum</li>
+                            <li><i class="fas fa-check"></i> Softcover with bulk discount</li>
+                            <li><i class="fas fa-check"></i> Priority production</li>
+                            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                            <li><i class="fas fa-check"></i> Custom packaging option</li>
+                        </ul>
+                        <button class="pricing-btn">Contact Sales</button>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       FEATURES SECTION
-  =========================================== -->
-  <section id="features" aria-labelledby="features-title">
-    <div class="container">
-      <div class="features-header fade-in">
-        <span class="section-label">Why Paperhood</span>
-        <h2 class="section-title" id="features-title">Everything You Need to Publish</h2>
-        <p class="section-subtitle">From indie authors to small publishers, we've built a platform that makes professional printing available to all.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card fade-in fade-in-delay-1">
-          <div class="feature-icon feature-icon-bg-1" aria-hidden="true">📦</div>
-          <h3>No Minimum Order</h3>
-          <p>Print as few as 1 copy or as many as you need. No bulk commitments — perfect for testing or on-demand fulfilment.</p>
-        </div>
-
-        <div class="feature-card fade-in fade-in-delay-2">
-          <div class="feature-icon feature-icon-bg-2" aria-hidden="true">⚡</div>
-          <h3>Fast Printing</h3>
-          <p>Orders are processed within 24 hours and dispatched immediately. Choose express delivery for same-week arrival.</p>
-        </div>
-
-        <div class="feature-card fade-in fade-in-delay-3">
-          <div class="feature-icon feature-icon-bg-3" aria-hidden="true">💰</div>
-          <h3>Affordable Pricing</h3>
-          <p>Transparent, per-copy pricing with no hidden fees. The more you print, the more you save — our volume tiers reward growth.</p>
-        </div>
-
-        <div class="feature-card fade-in fade-in-delay-1">
-          <div class="feature-icon feature-icon-bg-4" aria-hidden="true">📄</div>
-          <h3>Quality Paper</h3>
-          <p>Choose from a range of premium paper stocks — cream, white, or recycled — all printed with high-resolution digital presses.</p>
-        </div>
-
-        <div class="feature-card fade-in fade-in-delay-2">
-          <div class="feature-icon feature-icon-bg-5" aria-hidden="true">🎨</div>
-          <h3>Custom Covers</h3>
-          <p>Upload your own cover design or use our free cover creator. Soft cover, hardcover, glossy or matte — the choice is yours.</p>
-        </div>
-
-        <div class="feature-card fade-in fade-in-delay-3">
-          <div class="feature-icon feature-icon-bg-6" aria-hidden="true">🚚</div>
-          <h3>Worldwide Shipping</h3>
-          <p>We ship to 50+ countries. Track your order in real-time from print floor to your front door.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       HOW IT WORKS SECTION
-  =========================================== -->
-  <section id="how-it-works" aria-labelledby="how-title">
-    <div class="how-bg-text" aria-hidden="true">Process</div>
-    <div class="container">
-      <div class="how-header fade-in">
-        <span class="section-label">Simple Process</span>
-        <h2 class="section-title" id="how-title">From Upload to Doorstep</h2>
-        <p class="section-subtitle">Four easy steps stand between your manuscript and a beautiful printed book in your hands.</p>
-      </div>
-
-      <div class="steps-container" role="list">
-        <div class="step-item fade-in fade-in-delay-1" role="listitem">
-          <div class="step-number-wrap">
-            <span class="step-emoji" aria-label="Upload icon">📤</span>
-            <span class="step-num-badge" aria-hidden="true">1</span>
-          </div>
-          <h3>Upload Your Book</h3>
-          <p>Submit your manuscript as PDF or EPUB. Our system automatically checks formatting and flags any issues before print.</p>
-        </div>
-
-        <div class="step-item fade-in fade-in-delay-2" role="listitem">
-          <div class="step-number-wrap">
-            <span class="step-emoji" aria-label="Settings icon">⚙️</span>
-            <span class="step-num-badge" aria-hidden="true">2</span>
-          </div>
-          <h3>Choose Specifications</h3>
-          <p>Pick your trim size, paper type, cover finish, and binding. Preview exactly how your book will look before you commit.</p>
-        </div>
-
-        <div class="step-item fade-in fade-in-delay-3" role="listitem">
-          <div class="step-number-wrap">
-            <span class="step-emoji" aria-label="Print icon">🖨️</span>
-            <span class="step-num-badge" aria-hidden="true">3</span>
-          </div>
-          <h3>Print &amp; Produce</h3>
-          <p>Our print-on-demand facility processes your order within 24 hours using professional-grade digital printing equipment.</p>
-        </div>
-
-        <div class="step-item fade-in fade-in-delay-4" role="listitem">
-          <div class="step-number-wrap">
-            <span class="step-emoji" aria-label="Delivery icon">📬</span>
-            <span class="step-num-badge" aria-hidden="true">4</span>
-          </div>
-          <h3>Deliver to Your Door</h3>
-          <p>Your books are carefully packed and shipped to any address worldwide. Track your delivery every step of the way.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       PRICING SECTION
-  =========================================== -->
-  <section id="pricing" aria-labelledby="pricing-title">
-    <div class="container">
-      <div class="pricing-header fade-in">
-        <span class="section-label">Simple Pricing</span>
-        <h2 class="section-title" id="pricing-title">Pay Only for What You Print</h2>
-        <p class="section-subtitle">No subscriptions, no surprises. Start free and scale as your needs grow.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- Starter Plan -->
-        <div class="pricing-card fade-in fade-in-delay-1">
-          <p class="pricing-plan-name">Starter</p>
-          <p class="pricing-desc">Perfect for first-time authors testing the waters or printing proof copies.</p>
-
-          <div class="pricing-price">
-            <span class="pricing-currency">₹</span>
-            <span class="pricing-amount">299</span>
-            <span class="pricing-period">/ copy</span>
-          </div>
-
-          <div class="pricing-divider"></div>
-
-          <ul class="pricing-features" aria-label="Starter plan features">
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              1–10 copies per order
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Standard paper stock
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Soft cover only
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Delivery in 5–7 days
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Email support
-            </li>
-          </ul>
-
-          <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center;">Get Started Free</a>
-        </div>
-
-        <!-- Pro Plan (Recommended) -->
-        <div class="pricing-card featured fade-in fade-in-delay-2" aria-label="Recommended plan">
-          <span class="pricing-badge">⭐ Most Popular</span>
-          <p class="pricing-plan-name">Pro Author</p>
-          <p class="pricing-desc">For serious authors and small publishers who need speed, quality, and flexibility.</p>
-
-          <div class="pricing-price">
-            <span class="pricing-currency">₹</span>
-            <span class="pricing-amount">219</span>
-            <span class="pricing-period">/ copy</span>
-          </div>
-
-          <div class="pricing-divider"></div>
-
-          <ul class="pricing-features" aria-label="Pro Author plan features">
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              11–100 copies per order
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Premium paper stock
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Soft &amp; hardcover options
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Delivery in 2–3 days
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Priority support
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Free cover design review
-            </li>
-          </ul>
-
-          <a href="#contact" class="btn btn-amber" style="width:100%;justify-content:center;">Choose Pro Author</a>
-        </div>
-
-        <!-- Publisher Plan -->
-        <div class="pricing-card fade-in fade-in-delay-3">
-          <p class="pricing-plan-name">Publisher</p>
-          <p class="pricing-desc">Built for small publishers, businesses, and institutions with high-volume needs.</p>
-
-          <div class="pricing-price">
-            <span class="pricing-currency">₹</span>
-            <span class="pricing-amount">159</span>
-            <span class="pricing-period">/ copy</span>
-          </div>
-
-          <div class="pricing-divider"></div>
-
-          <ul class="pricing-features" aria-label="Publisher plan features">
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              100+ copies per order
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              All paper stocks + custom
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              All binding types
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Express same-week delivery
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Dedicated account manager
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>
-              Custom branding &amp; invoices
-            </li>
-          </ul>
-
-          <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center;">Contact Sales</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       CTA SECTION
-  =========================================== -->
-  <section id="cta-section" aria-labelledby="cta-title">
-    <div class="cta-bg-pattern" aria-hidden="true"></div>
-    <div class="cta-grid-lines" aria-hidden="true"></div>
-    <div class="container">
-      <div class="cta-inner fade-in">
-        <span class="section-label">Ready to Print?</span>
-        <h2 id="cta-title">
-          No bulk printing.<br />No waste.<br /><em>Print only what you need.</em>
-        </h2>
-        <p>
-          Join thousands of authors who trust Paperhood to bring their stories to life.
-          Upload your manuscript today and have your books in hand within the week.
-        </p>
-        <div class="cta-actions">
-          <a href="#contact" class="btn btn-amber">
-            <span>📤</span> Upload Your Book
-          </a>
-          <a href="#pricing" class="btn btn-outline-white">View Pricing</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       TESTIMONIALS SECTION
-  =========================================== -->
-  <section id="testimonials" aria-labelledby="testimonials-title">
-    <div class="container">
-      <div class="testimonials-header fade-in">
-        <span class="section-label">Testimonials</span>
-        <h2 class="section-title" id="testimonials-title">Authors Love Paperhood</h2>
-        <p class="section-subtitle">Don't take our word for it — hear from the writers who've trusted us with their work.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <article class="testimonial-card fade-in fade-in-delay-1" aria-label="Testimonial from Priya Mehta">
-          <span class="testimonial-quote-icon" aria-hidden="true">"</span>
-          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="testimonial-text">
-            "I printed my debut poetry collection through Paperhood and the quality blew me away.
-            Crisp typography, premium feel, and the whole process was so smooth I've already
-            placed a second order for my book launch event."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar avatar-1" aria-hidden="true">P</div>
-            <div>
-              <div class="author-name">Priya Mehta</div>
-              <div class="author-role">Poet &amp; Author, Mumbai</div>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h2>No bulk printing. No waste.<br>Print only what you need.</h2>
+                    <p>Join thousands of authors who trust Paperhood for their printing needs.</p>
+                    <button class="btn-primary btn-large" id="ctaUploadBtn">
+                        <i class="fas fa-cloud-upload-alt"></i> Upload Your Book
+                    </button>
+                </div>
             </div>
-          </div>
-        </article>
+        </section>
 
-        <article class="testimonial-card fade-in fade-in-delay-2" aria-label="Testimonial from Rohan Desai">
-          <span class="testimonial-quote-icon" aria-hidden="true">"</span>
-          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="testimonial-text">
-            "As a small-press publisher, Paperhood has transformed how I operate. No more storing
-            500 copies in my spare room. I print-to-order now, keep zero inventory, and my profit
-            margins have actually improved."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar avatar-2" aria-hidden="true">R</div>
-            <div>
-              <div class="author-name">Rohan Desai</div>
-              <div class="author-role">Indie Publisher, Pune</div>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What <span class="gradient-text">Authors Say</span></h2>
+                    <p class="section-subtitle">Join 10,000+ satisfied authors who've printed with Paperhood</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Paperhood made my dream of publishing my poetry collection a reality. The quality is exceptional, and I only printed 50 copies — no minimum order was a game-changer!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Indie Author</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Fast turnaround, beautiful print quality, and responsive customer support. Paperhood has become my go-to print partner for all my client projects."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Book Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Finally, a print service that cares about the environment and quality. The hardcover options are stunning. Highly recommend Paperhood!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Emma Rodriguez</h4>
+                                <span>Children's Author</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
+        </section>
 
-        <article class="testimonial-card fade-in fade-in-delay-3" aria-label="Testimonial from Anika Sharma">
-          <span class="testimonial-quote-icon" aria-hidden="true">"</span>
-          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="testimonial-text">
-            "I used Paperhood to create a personalised cookbook as a wedding gift. The hardcover
-            option looked stunning. Delivery was faster than expected and customer support was
-            incredibly responsive throughout."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar avatar-3" aria-hidden="true">A</div>
-            <div>
-              <div class="author-name">Anika Sharma</div>
-              <div class="author-role">Food Blogger, Bangalore</div>
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                    <p class="section-subtitle">Everything you need to know about printing with Paperhood</p>
+                </div>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span><i class="fas fa-question-circle"></i> What file formats do you accept?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We accept PDF, DOCX, EPUB, MOBI, and InDesign (INDD) files. For best results, we recommend uploading a print-ready PDF with embedded fonts and 300 DPI images.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span><i class="fas fa-box"></i> Is there a minimum order quantity?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            No minimum order! Print one copy or thousands. We believe authors should have the freedom to print exactly what they need, when they need it.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span><i class="fas fa-clock"></i> How long does printing and shipping take?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Standard production takes 5-7 business days. Rush production (2-3 days) is available for an additional fee. Shipping times vary by location (3-10 business days internationally).
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span><i class="fas fa-globe"></i> Do you ship internationally?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! We ship to over 120 countries worldwide. International shipping rates are calculated at checkout based on weight and destination.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span><i class="fas fa-eye"></i> Can I order a sample before printing in bulk?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Absolutely! Order a single proof copy at production cost to check quality, paper, and binding before committing to larger quantities.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span><i class="fas fa-palette"></i> What binding options are available?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We offer perfect binding (softcover), smyth-sewn binding (hardcover), spiral binding, and saddle stitching for booklets.
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="section-header left-align">
+                            <span class="section-tag">Get In Touch</span>
+                            <h2>Let's Start Your <span class="gradient-text">Print Journey</span></h2>
+                            <p>Have questions? We're here to help you bring your book to life.</p>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>hello@paperhood.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>+917219576188</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Visit Us</h4>
+                                    <p>158 Gandhi Nagar Nagpur </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Tejas khope">
+                            <small class="error-message" id="nameError"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="hello@example.com">
+                            <small class="error-message" id="emailError"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your book project..."></textarea>
+                            <small class="error-message" id="messageError"></small>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="formSuccess" class="form-success"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <!-- ==========================================
-       FAQ SECTION
-  =========================================== -->
-  <section id="faq" aria-labelledby="faq-title">
-    <div class="container">
-      <div class="faq-layout">
-        <div class="faq-sidebar fade-in">
-          <span class="section-label">FAQ</span>
-          <h2 class="section-title" id="faq-title">Got Questions?</h2>
-          <p class="section-subtitle">Find quick answers to the most common questions about our printing service.</p>
-
-          <div class="faq-contact-hint">
-            <p>Can't find what you're looking for? Our support team is available Monday–Saturday, 9am–6pm.</p>
-            <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Contact Support</a>
-          </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>Paperhood</span>
+                    </div>
+                    <p>Professional print on demand service for authors worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Refunds</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get printing tips and offers</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Paperhood. All rights reserved. Print only what you need, zero waste.</p>
+                <p class="developer-credit">Design & Developed by <a href="https://www.linkedin.com/in/tejas-khope" target="_blank" rel="noopener noreferrer">Tejas Khope</a></p>
+            </div>
         </div>
+    </footer>
 
-        <div class="faq-list" role="list">
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
-              What file formats do you accept for uploads?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-answer-1" role="region">
-              <div class="faq-answer-inner">
-                We accept PDF (preferred), EPUB, and DOCX files. For best results, we recommend submitting
-                a press-ready PDF with embedded fonts, at least 300 DPI images, and with 3mm bleed on all edges.
-                Our upload tool will automatically flag any issues before you confirm your order.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
-              Is there a minimum number of copies I must order?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-answer-2" role="region">
-              <div class="faq-answer-inner">
-                No — that's one of our core promises. You can order as few as a single copy.
-                Whether you need one proof copy, a handful for friends, or a run of hundreds,
-                we handle every order with the same care. Per-copy pricing adjusts with volume,
-                so larger orders automatically get better rates.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
-              How long does printing and delivery take?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-answer-3" role="region">
-              <div class="faq-answer-inner">
-                Orders are typically processed and printed within 24 hours of confirmation.
-                Standard domestic shipping takes 3–5 business days; express options are
-                available for 1–2 day delivery. International shipping to 50+ countries
-                takes 7–14 business days depending on destination. You'll receive a
-                tracking number as soon as your order is dispatched.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
-              What paper and binding options are available?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-answer-4" role="region">
-              <div class="faq-answer-inner">
-                We offer white and cream interior paper in 70gsm, 80gsm, and 100gsm weights.
-                For covers, choose from soft cover (matte or gloss laminate) or hardcover (case-bound).
-                Binding options include perfect binding, saddle-stitch (for shorter books), and case binding.
-                Pro and Publisher plan customers can also request custom paper samples before ordering.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
-              What happens if I'm not happy with my order?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer" id="faq-answer-5" role="region">
-              <div class="faq-answer-inner">
-                Your satisfaction is guaranteed. If your books arrive with printing defects,
-                damage, or don't match your approved proof, we will reprint and reship at
-                no cost to you. Simply contact our support team within 14 days of delivery
-                with photos of the issue and we'll resolve it promptly — no questions asked.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       CONTACT SECTION
-  =========================================== -->
-  <section id="contact" aria-labelledby="contact-title">
-    <div class="container">
-      <div class="contact-layout">
-        <div class="contact-info fade-in">
-          <span class="section-label">Get In Touch</span>
-          <h2 class="section-title" id="contact-title">We'd Love to Hear From You</h2>
-          <p class="section-subtitle">Have a question, a custom request, or just want to say hello? Drop us a message and our team will get back to you within one business day.</p>
-
-          <div style="margin-top:40px;">
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon" aria-hidden="true">📧</div>
-              <div>
-                <div class="contact-detail-label">Email</div>
-                <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="86eee3eaeae9c6f6e7f6e3f4eee9e9e2a8efe8">[email&#160;protected]</a></div>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon" aria-hidden="true">📞</div>
-              <div>
-                <div class="contact-detail-label">Phone</div>
-                <div class="contact-detail-value">+91 98765 43210</div>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon" aria-hidden="true">📍</div>
-              <div>
-                <div class="contact-detail-label">Address</div>
-                <div class="contact-detail-value">42 Press Lane, Bandra West<br />Mumbai, Maharashtra 400050</div>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon" aria-hidden="true">🕐</div>
-              <div>
-                <div class="contact-detail-label">Business Hours</div>
-                <div class="contact-detail-value">Mon–Sat, 9:00 AM – 6:00 PM IST</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-wrap fade-in fade-in-delay-2">
-          <h3>Send Us a Message</h3>
-          <p>Fill in the form below and we'll respond within 24 hours.</p>
-
-          <form id="contact-form" novalidate aria-label="Contact form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name <span aria-hidden="true" style="color:var(--rust);">*</span></label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Priya Mehta"
-                  autocomplete="name"
-                  aria-required="true"
-                  aria-describedby="name-error"
-                />
-                <span class="form-error-msg" id="name-error" role="alert"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email Address <span aria-hidden="true" style="color:var(--rust);">*</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="priya@example.com"
-                  autocomplete="email"
-                  aria-required="true"
-                  aria-describedby="email-error"
-                />
-                <span class="form-error-msg" id="email-error" role="alert"></span>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message <span aria-hidden="true" style="color:var(--rust);">*</span></label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell us about your project, ask a question, or just say hello…"
-                aria-required="true"
-                aria-describedby="message-error"
-              ></textarea>
-              <span class="form-error-msg" id="message-error" role="alert"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;">
-              Send Message →
-            </button>
-
-            <div class="form-success" id="form-success" role="status" aria-live="polite">
-              <p>✅ Thank you! Your message has been sent. We'll be in touch within 24 hours.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ==========================================
-       FOOTER
-  =========================================== -->
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#home" class="nav-logo" aria-label="Paperhood homepage">
-            <div class="nav-logo-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
-            </div>
-            Paperhood
-          </a>
-          <p>Professional print-on-demand books for independent authors, small publishers, and creative businesses across India and worldwide.</p>
-
-          <div class="social-links" aria-label="Social media links">
-            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-            <a href="#" class="social-link" aria-label="YouTube">▶</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul role="list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press Kit</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Product</h4>
-          <ul role="list">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul role="list">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2025 Paperhood. All rights reserved. Made with ❤️ in India.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Sitemap</a>
-        </div>    
-      </div>
-    </div>    
-  </footer>
-  
-  <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
